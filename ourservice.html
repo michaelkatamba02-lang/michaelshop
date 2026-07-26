@@ -30,6 +30,7 @@ nav{
         padding: 10px;
         margin: 0px 5px;
         gap: 15px;
+        overflow-x: auto;
     }
     nav a{
         text-decoration: none;
@@ -39,9 +40,13 @@ nav{
         color: white;
         font-size: 17px;
         border-radius: 15px;
+        flex-shrink: 0;
     }
     nav a:hover{
         transform: scale(1.10);
+    }
+    nav::-webkit-scrollbar{
+        display: none;
     }
 </style>
 <body>
